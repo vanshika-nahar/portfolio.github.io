@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* NAVBAR */
+
+.nav-bar {
+    background-color: black;
+    color: white;
+    padding: 2px 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.nav-ul {
+    display: flex;
+}
+
+.nav-li-name {
+    margin: 25px 60px;
+    margin-left: 500px;
+}
+
+.nav-li-email {
+    margin: 25px 50px;
+}
+
+.nav-li-name,
+.nav-li-email {
+    list-style-type: none;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.navbar-icon-li{
+    margin-left:auto;
+    list-style-type: none;
+}
+
+.navbar-icon-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon-li {
+    list-style-type: none;
+    margin: 10px 30px;
+}
+
+.navbar-icon-img {
+    filter: invert(100%);
+    border-radius: 60px;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+    display: flex;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    /* position: absolute; */
+    background: #000000;
+    color: white;
+    width: 500px;
+    height: 100vh;
+    transition: transform 0.2s ease-in;
+}
+
+.sidebar-nav {
+    padding: 120px 10px;
+}
+
+.sidebar-li {
+    list-style-type: none;
+    font-size: 38px;
+    font-weight: 600;
+    padding: 45px;
+}
+
+.sidebar-li:hover {
+    background: grey;
+}
+
+.sidebar-a {
+    text-decoration: none;
+    font-size: 38px;
+    color: white;
+    font-weight: 600;
+    padding: 45px;
+}
+
+/* Home */
+
+.main {
+    background: white;
+    color: #000;
+    width: 82vw;
+    height: 100vh;
+}
+
+.infoContainer {
+    background: rgb(255, 255, 255);
+    height: 58vh;
+    width: 75vw;
+    margin-left: 150px;
+    margin: 164px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.devInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hello {
+    font-size: 38px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.name {
+    font-size: 58px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 700;
+}
+
+.about {
+    font-size: 35px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+    color: blue;
+}
+
+.button {
+    display: flex;
+    padding: 18px;
+    margin-top: 34px;
+}
+
+.cv {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    color: white;
+    background-color: black;
+    box-shadow: 1px 1px 15px 5px #80808099;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.cv:hover {
+    font-size: 23px;
+    font-weight: bold;
+    color: rgb(4, 5, 5);
+    background-color: rgb(5, 153, 163);
+    border: none;
+}
+
+.contactMe {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px 20px;
+    margin: 0px 21px;
+    border: 1px solid white;
+    border-radius: 25px;
+    color: white;
+    background-color: black;
+    box-shadow: 1px 1px 15px 5px #80808099;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.contactMe:hover {
+    font-size: 23px;
+    font-weight: bold;
+    color: rgb(4, 5, 5);
+    background-color: rgb(221, 181, 197);
+    border: none;
+}
+
+.devPic img {
+    height: 92vh;
+    margin-top: -150px;
+}
+
+/* CONTACT FORM */
+
+.mainContactContainer {
+    background: #ffffff;
+    color: #000;
+    width: 82vw;
+    height: 100vh;
+}
+
+.contactForm {
+    background: rgb(255, 255, 255);
+    height: 75vh;
+    width: 75vw;
+    margin: 164px auto;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px auto;
+    margin-left: 150px;
+}
+
+.card div.heading {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.card form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 718px;
+}
+
+.card input,
+textarea {
+    outline: none;
+    border: 1px solid rgb(166, 160, 160);
+    padding: 22px;
+    margin: 10px;
+    font-size: 28px;
+    width: 700px;
+    border-radius: 20px;
+}
+
+.card input:focus {
+    border: 5px solid black;
+}
+
+.card textarea:focus {
+    border: 5px solid black;
+}
+
+.card button {
+    outline: none;
+    border: none;
+    padding: 22px;
+    margin: 10px;
+    width: 500px;
+    margin: 30px auto;
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    background-image: linear-gradient(to top left, rgb(28, 160, 216), rgb(147, 246, 216), rgb(28, 160, 216));
+}
+
+.card button:hover {
+    cursor: pointer;
+    color: white;
+    background-image: linear-gradient(to bottom left, black, black, rgb(57, 56, 56), black);
+}
+
+/* WORK */
+
+.mainWorkContainer {
+    background: #ffffff;
+    color: #000;
+    width: 82vw;
+    height: 100vh;
+    margin: 0px auto;
+}
+
+.mainWorkContainer h1 {
+    text-align: center;
+    margin: 120px auto;
+    font-size: 60px;
+}
+
+.workContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.card .work-img {
+    width: 300px;
+    border-radius: 122px;
+    opacity: 0.8;
+}
+
+.card .work-img:hover {
+    margin: -10px;
+    width: 320px;
+    border: 5px solid black;
+    opacity: 1;
+}
+
+/* SKILLS */
+
+.skillContainer {
+    background: rgb(255, 255, 255);
+    height: 58vh;
+    width: 75vw;
+    font-size: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.skillContainer h1 {
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 160px;
+    margin-bottom: 50px;
+    font-size: 60px;
+}
+
+.skillSubContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 500px;
+    margin-top: 16px;
+    margin-bottom: 50px;
+}
+
+.skill-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.lang-card {
+    margin: 31px 40px;
+    padding: 26px;
+    border: 2px solid rgb(189, 187, 187);
+    border-radius: 20px;
+    box-shadow: 8px 11px 17px 6px grey;
+}
+
+.skill-img {
+    width: 250px;
+    height: 250px;
+}
+
+.card-text {
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sidebarGo {
+    transform: translate(-500px, 0px);
+    position: absolute;
+}
+
+.menuIcon {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.menu {
+    filter: invert(100%);
+    margin: 10px;
+}
+
+.cross {
+    filter: invert(100%);
+    margin: 12px;
+    margin-left: 420px;
+}
+
+.cross:hover {
+    filter: invert(70%);
+    margin: 12px;
+    margin-left: 420px;
+}
+
+@media (max-width:1800px) {
+    .nav-bar {
+        background-color: white;
+        color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+    }
+
+    .nav-li-name {
+        margin: 25px 60px;
+        margin-left: 380px;
+    }
+
+    .nav-li-email {
+        margin: 25px 50px;
+    }
+
+    .menu {
+        filter: invert(0%);
+        margin: 10px;
+    }
+
+    .cross {
+        filter: invert(0%);
+        margin: 10px;
+        margin-left: 370px;
+    }
+
+    /* .sidebar {
+        transform: translate(-500px, 0px);
+        position: absolute;
+    } */
+
+    .mainContactContainer,
+    .mainWorkContainer,
+    .main {
+        width: 100vw;
+    }
+
+    .contact-img {
+        width: 450px;
+    }
+
+    .card input,
+    textarea {
+        padding: 12px;
+        margin: 10px;
+        margin-left: 110px;
+        font-size: 18px;
+        width: 500px;
+        border-radius: 10px;
+    }
+
+    .card button {
+        padding: 12px;
+        margin: 10px;
+        margin-left: 110px;
+        font-size: 18px;
+        width: 500px;
+        border-radius: 10px;
+    }
+
+    .skillContainer {
+        background: rgb(255, 255, 255);
+        height: 58vh;
+        width: 75vw;
+        margin: 164px auto;
+        margin-left: 13%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width:480px) {
+    .devPic img {
+        display: none;
+    }
+
+    .hello {
+        font-size: 18px;
+        font-family: 'Chakra Petch', sans-serif;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .name {
+        font-size: 28px;
+        font-family: 'Chakra Petch', sans-serif;
+        font-weight: 700;
+    }
+
+    .about {
+        font-size: 15px;
+        font-family: 'Chakra Petch', sans-serif;
+        font-weight: 600;
+        color: blue;
+    }
+
+    .button {
+        display: flex;
+        padding: 10px;
+        margin-top: 14px;
+    }
+
+    .cv {
+        text-align: center;
+        font-size: 10px;
+        font-weight: bold;
+        padding: 7px 10px;
+        border: 1px solid white;
+        border-radius: 25px;
+        color: white;
+        background-color: black;
+        box-shadow: 1px 1px 15px 5px #80808099;
+        cursor: pointer;
+    }
+
+    .cv:hover {
+        font-size: 10px;
+        font-weight: bold;
+        color: rgb(4, 5, 5);
+        background-color: rgb(5, 153, 163);
+        border: none;
+    }
+
+    .contactMe {
+        text-align: center;
+        font-size: 10px;
+        font-weight: bold;
+        padding: 7px 10px;
+        margin: 0px 21px;
+        border: 1px solid white;
+        border-radius: 25px;
+        color: white;
+        background-color: black;
+        box-shadow: 1px 1px 15px 5px #80808099;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+    .contactMe:hover {
+        font-size: 10px;
+        font-weight: bold;
+        color: rgb(4, 5, 5);
+        background-color: rgb(221, 181, 197);
+        border: none;
+    }
+}
